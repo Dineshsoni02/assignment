@@ -1,7 +1,6 @@
 .container {
   background: var(--text-color);
   height: 2.8rem;
-  width: 100%;
   .navbar {
     height: 100%;
     display: flex;
@@ -62,6 +61,7 @@
         margin-left: 0;
         visibility: hidden;
         position: absolute;
+        width: 0;
       }
     }
   }
