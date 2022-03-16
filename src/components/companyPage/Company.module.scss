@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 1rem;
+  border-right: 1px solid slategrey;
+  .topDiv {
+    display: flex;
+    gap: 10px;
+    .title {
+      width: 100%;
+      display: flex;
+      gap: 0.51rem;
+      flex-direction: column;
+      font-weight: 600;
+      span {
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+      }
+    }
+    .compLogo {
+      text-align: center;
+      img {
+        height: 90px;
+        width: 90px;
+      }
+      .name {
+        width: 10rem;
+      }
+    }
+  }
+  .deliveryDetails {
+    width: 100%;
+    .title {
+      gap: 0.51rem;
+      font-weight: 600;
+    }
+    .innerContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .expdel,
+      .rtn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .extraOffer {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    background: #229bc6;
+    color: var(--bg-color0);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  .footerText {
+    color: gray;
+  }
+  .btnBox {
+    display: flex;
+    justify-content: center;
+    .buyBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px 12px;
+      border: none;
+      background: var(--secondary-color);
+      color: var(--bg-color0);
+      font-size: 1rem;
+      cursor: pointer;
+      &:hover {
+        background: #ee8b00c9;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    gap: 5px;
+    border: none;
+  }
+}

@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  .title {
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+  .product {
+    display: flex;
+    width: 100%;
+    background: var(--bg-color1);
+    .details {
+      padding: 5px;
+
+      .bottomdiv {
+        display: flex;
+        justify-content: space-between;
+        .price {
+          display: flex;
+          align-items: center;
+          .rupeeValue {
+            text-decoration: line-through;
+            margin-right: 1rem;
+          }
+          span {
+            color: var(--secondary-color);
+            font-weight: 600;
+          }
+        }
+        .orderBtn {
+          input[type="button"] {
+            background: var(--secondary-color);
+            border: none;
+            outline: none;
+            padding: 10px 12px;
+            font-weight: 500;
+            color: var(--bg-color0);
+            font-size: 1.1rem;
+            cursor: pointer;
+            &:hover {
+              background: #ee8b00d0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    .product {
+      gap: 10px;
+      background: var(--bg-color0);
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 12rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .details {
+        padding: 0%;
+      }
+    }
+  }
+}

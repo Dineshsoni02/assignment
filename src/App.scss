@@ -1,0 +1,16 @@
+.App{
+    .bottomDiv{
+        display: flex;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .App{
+        .bottomDiv{
+            padding: 1rem 0;
+            flex-direction: column;
+        }
+    }
+    
+}

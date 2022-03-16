@@ -1,0 +1,209 @@
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 0 15px;
+  .topDiv {
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    .head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 6rem;
+        height: 5rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    span {
+      text-align: center;
+      margin-left: 5rem;
+    }
+  }
+  .bottomDiv {
+    background: var(--bg-color1);
+    width: 100%;
+    height: fit-content;
+    .innerDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .watchImg {
+        height: 20rem;
+        width: 25rem;
+      }
+      .details {
+        flex: 1.8;
+        padding: 1rem;
+        border-right: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15rem;
+        font-weight: 501;
+        gap: 10px;
+        .info {
+          width: 30rem;
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          .rupeeValue {
+            text-decoration: line-through;
+          }
+        }
+        .allDetails {
+          text-decoration: underline;
+        }
+      }
+      .status {
+        flex: 1.3;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        height: 15rem;
+        justify-content: space-around;
+        .sthead {
+          display: flex;
+          align-items: center;
+          .title {
+            font-size: 2rem;
+            font-weight: 700;
+          }
+          .greenDot {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 1rem;
+          }
+        }
+        .timeRem {
+          display: flex;
+          flex-direction: column;
+          font-weight: 600;
+          span {
+            color: var(--red-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+        }
+        .bidplaced {
+          display: flex;
+          font-size: 1.4rem;
+          font-weight: 800;
+          .text {
+            border-right: 2px solid #dadada;
+            color: #dadada;
+            padding-right: 0.5rem;
+          }
+          span {
+            color: #44da6b;
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    gap: 0;
+    padding: 1px;
+    .topDiv {
+      height: 10rem;
+      .head {
+        img {
+          width: 5rem;
+          height: 3rem;
+        }
+        h1 {
+          font-size: large;
+        }
+      }
+      span {
+        font-size: small;
+        margin: 0;
+      }
+    }
+    .bottomDiv {
+      .innerDiv {
+        flex-direction: column;
+        .watchImg {
+          height: 10rem;
+          width: 15rem;
+        }
+        .details {
+          border: none;
+          .info {
+            width: fit-content;
+            font-size: small;
+          }
+          .price {
+            svg {
+              height: 1rem;
+            }
+          }
+          .rupeeValue {
+            font-size: small;
+          }
+        }
+        .qty{
+          font-size: small;
+        }
+        .allDetails {
+          font-size: small;
+        }
+      }
+      .status {
+          flex-direction: row !important;
+          gap: 10px;
+        .sthead {
+          align-items: flex-start !important;
+          .title {
+            font-size: 1rem !important;
+          }
+          .greenDot {
+            width: .8rem !important;
+            height: .8rem !important;
+            margin: 0 .4rem !important;
+          }
+        }
+        .timeRem {
+          font-size: small;
+          span {
+            font-size: small !important;
+          }
+        }
+        .bidplaced {
+          font-size: small  !important;
+          .text {
+            padding-right: 0.2rem !important ;
+          }
+          span {
+            padding: 0 0.3rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
